@@ -1,0 +1,10 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 4px;
+    align-items: center;
+}
+header {
+    grid-column:    1 / 3;
+}
