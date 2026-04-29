@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <base target="_blank"">
 </head>
 
 <body>
-    <!-- Header con navegación -->
     <header>
         <nav>
             <ul>
@@ -21,20 +21,21 @@
                         <p>28 años, argentino, desarrollador de software/aplicaciones</p>
                     </div>
                 </li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#sobre-mi" target="_self">Sobre mí</a></li>
+                <li><a href="#contacto" target="_self">Contacto</a></li>
+                <li><a href="#skills" target="_self">Skills</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección sobre mí -->
 
-    <!-- Sección proyectos -->
     <section id="proyectos">
         <h2>Proyectos</h2>
         <div class="proyectos-grid">
-            <div class="proyecto hecho">Proyecto hecho 1</div>
+            
+            <a href="blog\index.html" style="display: block; text-decoration: none;" class="proyecto hecho">
+            <div>blog tecnológico</div>
+            </a>
             <div class="proyecto hecho">Proyecto hecho 2</div>
             <div class="proyecto progreso">Proyecto en progreso</div>
             <div class="proyecto futuro">Proyecto futuro, Tu proyecto</div>
@@ -42,7 +43,6 @@
         </div>
     </section>
 
-    <!-- Sección skills -->
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -54,8 +54,7 @@
             <li>.NET</li>
         </ul>
     </section>
-
-    <!-- Sección contacto -->
+    
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Email: Ezequielg44@gmail.com</p>
