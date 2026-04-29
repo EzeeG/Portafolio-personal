@@ -20,6 +20,7 @@ header {
   background-color: #222;
   padding: 1rem;
 }
+
 .nav-foto img {
   width: 50px;
   height: 50px;
@@ -27,13 +28,13 @@ header {
   cursor: pointer;
 }
 .nav-foto .info-basica {
-    position: absolute;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    top: auto;
-    left: auto;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  top: auto;
+  left: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .nav-foto:hover .info-basica {
   display: block;
@@ -54,6 +55,11 @@ header nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
+
+.nav_li:hover {
+  text-shadow: #cfd8dc 0px 0px 8px;
+}
+
 .foto img {
   width: 150px;
   height: 150px;
@@ -67,6 +73,16 @@ header nav ul li a {
 .foto:hover + .info-basica {
   display: block;
 }
+@media (max-width: 400px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .foto img {
+    margin: 0 auto;
+    display: block;
+  }
+}
 
 :root {
   --hecho: linear-gradient(135deg, #3f51b5, #673ab7);     
@@ -75,39 +91,19 @@ header nav ul li a {
   --contratar: linear-gradient(135deg, #ff9800, #e91e63);
 }
 
-.proyecto.hecho {
-  background: var(--hecho);
-  color: #fff;
-}
-
-.proyecto.progreso {
-  background: var(--progreso);
-  color: #fff;
-}
-
-.proyecto.futuro {
-  background: var(--futuro);
-  color: #333;
-}
-
-
-.proyecto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
 #proyectos {
   max-width: 900px;
   margin: 2rem auto;
-  
 }
 
 .proyectos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   grid-template-rows: auto;
+  align-items: stretch;
   gap: 1rem;
-  min-height: 250px;
+  min-height: 200px;
+  height: 100%;
   width: 100%;
 }
 
@@ -142,7 +138,19 @@ header nav ul li a {
 .proyecto:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-  color: #f0f0f0; /* efecto glow en el texto */
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+@media (max-width: 400px) {
+  #proyectos {
+    min-height: 180px;
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
 }
 
 #skills {
