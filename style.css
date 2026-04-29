@@ -1,3 +1,10 @@
+:root {
+  --hecho: linear-gradient(135deg, #3f51b5, #673ab7);     
+  --progreso: linear-gradient(135deg, #00bcd4, #2196f3); 
+  --futuro: linear-gradient(135deg, #cfd8dc, #eceff1);   
+  --contratar: linear-gradient(135deg, #ff9800, #e91e63);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +15,16 @@ h1, h2, h3 {
     font-weight: 700;
     margin: 1rem;
 }
-
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  display: block;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -60,36 +76,19 @@ header nav ul li a {
   text-shadow: #cfd8dc 0px 0px 8px;
 }
 
-.foto img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 2rem;;
-}
 .info-basica {
   display: none;
 }
 
-.foto:hover + .info-basica {
-  display: block;
-}
+
 @media (max-width: 400px) {
   header nav ul {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .foto img {
-    margin: 0 auto;
-    display: block;
-  }
 }
 
-:root {
-  --hecho: linear-gradient(135deg, #3f51b5, #673ab7);     
-  --progreso: linear-gradient(135deg, #00bcd4, #2196f3); 
-  --futuro: linear-gradient(135deg, #cfd8dc, #eceff1);   
-  --contratar: linear-gradient(135deg, #ff9800, #e91e63);
-}
+
 
 #proyectos {
   max-width: 900px;
@@ -181,4 +180,13 @@ header nav ul li a {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 12px;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+  margin-top: 2rem;
+  position: relative;
+  
 }
