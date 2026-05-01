@@ -1,8 +1,7 @@
 :root {
-  --hecho: linear-gradient(135deg, #3f51b5, #673ab7);     
-  --progreso: linear-gradient(135deg, #00bcd4, #2196f3); 
-  --futuro: linear-gradient(135deg, #cfd8dc, #eceff1);   
-  --contratar: linear-gradient(135deg, #ff9800, #e91e63);
+  --hecho: linear-gradient(135deg, #9ba3d4, #722bec);     
+  --progreso: linear-gradient(135deg, #00bcd4, #2196f3);   
+  --futuro: linear-gradient(135deg, #c090d5, #c2d749);
 }
 
 * {
@@ -72,7 +71,7 @@ header nav ul li a {
   font-weight: bold;
 }
 
-.nav_li:hover {
+.nav_li:hover a {
   text-shadow: #cfd8dc 0px 0px 8px;
 }
 
@@ -131,7 +130,7 @@ header nav ul li a {
 
 .proyecto.futuro {
   background: var(--futuro);
-  color: #333;
+  color: #fff;
 }
 
 .proyecto:hover {
